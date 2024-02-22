@@ -1,0 +1,255 @@
+/* Global Variables */
+:root {
+    --text-color: #ffffffbd;
+    --alt-text-color: #ffbcf8fc;
+    --nav-background-color: #fef6fb;
+    --search-bar-background: #ffebfdfc;
+    --logo-color: #ffbcf8fc;
+    --alt-logo-color: #ffebfdfc;
+}
+
+/* Global */
+
+.dark-theme,
+.light-theme,
+.nav-content {
+    width: 100% !important;
+    height: 100% !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-image: url('https://i.imgur.com/Osdvn9o.png');
+}
+
+.dark-theme .content, 
+.light-theme .content {
+    background: rgba(0,0,0,0)
+}
+
+h1, h2, h3 {
+    color: var(--text-color) !important;
+}
+
+/* Footer */
+.container-footer {
+    display: none;
+}
+
+#skip-to-main-content {
+    display: none;
+}
+
+/* Nav Bar */
+
+.navbar-fixed-top.rbx-header {
+    filter: drop-shadow(0px 2px 4px #ffffffbf);
+    margin: 10px 10px 0px 10px;
+    padding: 5px;
+    height: 50px;
+    background: var(--nav-background-color);
+    border-radius: 50px;
+    border: none;
+    color: black;
+}
+
+.light-theme .rbx-header .rbx-navbar li:hover {
+    scale: 1.1 !important;
+    border-bottom: none!important;
+}
+
+.rbx-navbar a {
+    filter: drop-shadow(1pt 1pt 1px #00000021) !important;
+}
+
+.robux-menu-btn {
+    display: none !important;
+}
+
+.font-header-2.nav-menu-title {
+    scale: 1.2;
+    color: var(--alt-text-color) !important;
+}
+
+/* Recoloring Icons */
+
+.navbar-header,  
+.btn-navigation-nav-robux-md,
+.icon-common-notification-bell,
+.icon-nav-settings {
+    filter: drop-shadow(0px 1000px 0 var(--logo-color)) drop-shadow(1pt 1pt 1px #00000021) !important;
+    transform: translateY(-1000px) !important;
+}
+
+.notification-red {
+    filter: drop-shadow(2pt 2pt 5px #0000001f) !important;
+    border: 3px solid white !important;
+    background-color: var(--logo-color) !important;
+}
+
+.age-bracket-label {
+    display: none !important;
+}
+
+
+/* Recoloring search bar elements*/
+
+.icon-common-search-sm {
+    display: none;
+    filter: drop-shadow(0px 1000px 0 var(--alt-text-color)) drop-shadow(1pt 1pt 1px #93939300);
+    transform: translateY(-1000px) !important;
+}
+
+.clear-search {
+    display: none;
+    filter: drop-shadow(0px 1000px 0 var(--alt-text-color));
+    transform: translateY(-1000px) !important;
+}
+
+#navbar-search-input {
+    margin: -3px 0 4px -60px;
+    height: 35px;
+    width: 125%;
+    padding: 0 0 2px 15px;
+    color: var(--alt-text-color);
+    font-size: 16px;
+    border: 4px dashed var(--alt-text-color);
+    background-color: var(--nav-background-color);
+    box-shadow: 0 1px 4px #0000003b;
+}
+
+/* Search previews */
+
+.navbar-search .new-dropdown-menu {
+    box-shadow: 0 4px 10px 0 #ffffffbf;
+}
+
+.navbar-search .navbar-list-option-text {
+    color: var(--logo-color) !important;
+}
+
+.navbar-search li {
+    border-bottom: 1px solid var(--alt-logo-color) !important;
+    background-color: var(--nav-background-color);
+}
+
+.navbar-search li:hover, .navbar-search li.new-selected {
+    background-color: var(--alt-logo-color) !important;
+}
+
+.navbar-search [class^="icon"] {
+    scale: 1.4;
+    filter: drop-shadow(0px 1000px 0 var(--logo-color)) drop-shadow(1pt 1pt 1px #00000021) !important;
+    transform: translateY(-1000px) !important;
+}
+
+#settings-popover-menu {
+    color: var(--alt-text-color) !important;
+}
+
+/* Side Nav Bar */
+.rbx-left-col {
+    filter: drop-shadow(0px 2px 8px #ffffffbf);
+    width: 200px !important;
+    padding: 10px 0 0 10px;
+    margin-top: 43px;
+    margin-left: 10px;
+    box-shadow: none !important;
+    height: 90% !important;
+    background: var(--nav-background-color) !important;
+    border-radius: 50px
+}
+
+.rbx-left-col .font-header-2 {
+   color: var(--alt-text-color) !important;
+}
+
+.rbx-left-col .left-col-list li {
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.rbx-left-col .left-col-list li:hover {
+    border-bottom: 2px dashed var(--alt-text-color);
+}
+
+.notification-blue {
+    color: var(--nav-background-color) !important;
+    background-color: var(--alt-text-color) !important;
+}
+
+.light-theme .rbx-divider {
+    background-color: var(--alt-text-color) !important;
+    scale: 2;
+}
+
+/* Recoloring Icons */
+.rbx-left-col [class^="icon"] {
+    filter: drop-shadow(0px 1000px 0 var(--logo-color)) drop-shadow(1pt 1pt 1px #00000021) !important;
+    transform: translateY(-1000px) !important;
+}
+
+#upgrade-now-button {
+    display: none;
+}
+
+/* Homepage */
+
+.content .home-container {
+    margin: 50px 0 0 100px;
+}
+
+.game-card-info {
+ overflow: hidden !important;   
+}
+
+.content a,
+.content div
+{
+    color: var(--text-color) !important;
+}
+
+.light-theme .game-card-info .info-label,
+.btn-more
+{
+      filter: drop-shadow(0px 1000px 0 #fff) !important;
+      transform: translateY(-1000px) !important;
+}
+
+.home-interleave-divider,
+.game-carousel:nth-of-type(6),
+.game-carousel:nth-of-type(8),
+.container-header:nth-of-type(5),
+.container-header:nth-of-type(7),
+[data-testid="home-page-game-grid"]:nth-of-type(10)
+{
+    display: none;
+}
+
+.popover.bottom.people-info-card-container {
+    box-shadow: 0 0px 20px rgb(255, 255, 255);
+}
+
+.popover.bottom.people-info-card-container  [class^="icon"] {
+    filter: drop-shadow(0px 1000px 0 var(--logo-color)) drop-shadow(1pt 1pt 1px #00000021) ;
+    transform: translateY(-1000px) ;
+}
+
+.popover.bottom.people-info-card-container .label {
+    color: var(--alt-text-color) !important;
+}
+
+.popover.bottom.people-info-card-container .interaction-item:hover {
+    background-color: var(--alt-text-color) !important;
+}
+
+.popover.bottom.people-info-card-container .interaction-item:hover .label {
+    color: var(--nav-background-color) !important;
+}
+
+.popover.bottom.people-info-card-container .interaction-item:hover  [class^="icon"] {
+    filter: drop-shadow(0px 1000px 0 var(--nav-background-color)) drop-shadow(1pt 1pt 1px #00000021) !important;
+    transform: translateY(-1000px) !important;
+}
+
+.popover-content .border-bottom {
+   border-bottom: 0px solid var(--alt-text-color);
+}
